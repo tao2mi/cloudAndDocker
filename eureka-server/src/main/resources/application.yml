@@ -1,13 +1,21 @@
 spring:
   application:
     name: eureka-server
+  security:
+    user:
+      name: abc
+      password: abc
+
+#eureka:
+#  client:
+#    fetch-registry: false
+#    register-with-eureka: false
+#    service-url:
+#      defaultZone: http://localhost:${server.port}/eureka
 
 eureka:
-  client:
-    fetch-registry: false
-    register-with-eureka: false
-    service-url:
-      defaultZone: http://localhost:${server.port}/eureka
+  server:
+    enable-self-preservation: false
 
 ---
 spring:
