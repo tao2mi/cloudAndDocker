@@ -6,7 +6,8 @@ spring:
     name: movie-eureka
 
 user:
-  userServiceUrl: http://localhost:8000/
+#  userServiceUrl: http://localhost:8000/
+  userServiceUrl: http://user-eureka:8000/
 
 eureka:
   client:
