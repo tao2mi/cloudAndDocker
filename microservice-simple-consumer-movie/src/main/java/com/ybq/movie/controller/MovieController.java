@@ -1,6 +1,7 @@
 package com.ybq.movie.controller;
 
 import com.netflix.discovery.converters.Auto;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.ybq.movie.client.UserFeignClient;
 import com.ybq.movie.entity.User;
 import org.omg.CORBA.PRIVATE_MEMBER;
